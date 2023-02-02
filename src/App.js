@@ -1,25 +1,27 @@
 /* eslint-disable */
 // import React from 'react';
-import React, { useState } from "react";
-import "./App.css";
+import React, { useState, Component } from 'react';
+import './App.css';
 
-export default function App() {
-  return (
-    <div>
-      <h1>헬로 리액트ddfsafdsfdd</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        <h1>헬로 1111</h1>
+        <p>Start editing to see some magic happen :)</p>
+      </>
+    );
+  }
 }
 
-function App() {
+function App2() {
   let [글제목, 글제목변경] = useState([
-    "남자 코트 추천",
-    "강남 우동 맛집",
-    "파이썬 독학",
+    '남자 코트 추천',
+    '강남 우동 맛집',
+    '파이썬 독학',
   ]);
   let [따봉, 따봉변경] = useState(0);
-  let posts = "강남 고기 맛집";
+  let posts = '강남 고기 맛집';
 
   // function 제목바꾸기() {
   //   var newArray = [...글제목];
@@ -67,12 +69,12 @@ function App() {
 function Modal() {
   return (
     <>
-    <div className="modal">
-      <h2>제목</h2>
-      <p>날짜</p>
-      <p>상세내용</p>
-    </div>
-    <div></div>
+      <div className="modal">
+        <h2>제목</h2>
+        <p>날짜</p>
+        <p>상세내용</p>
+      </div>
+      <div></div>
     </>
   );
 }
